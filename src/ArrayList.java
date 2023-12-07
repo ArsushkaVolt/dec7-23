@@ -36,9 +36,10 @@ public class ArrayList
         if(Count >= _array.length)
         {
             IncreaseLength(1);
-            _array[Count] = element;
-            Count ++;
+
         }
+        _array[Count] = element;
+        Count ++;
 
     }
     private  void IncreaseLength(int elementCount)
