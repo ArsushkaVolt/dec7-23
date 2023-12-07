@@ -16,4 +16,12 @@ public class ArrayList
         System.arraycopy(elements, 0, _array, 0, elements.length);
         Count = elements.length;
     }
+    public int Get(int index)
+    {
+        if(index < 0 || index >= Count)
+        {
+            throw new IndexOutOfBoundsException("Bad index");
+        }
+        return _array[index];
+    }
 }
